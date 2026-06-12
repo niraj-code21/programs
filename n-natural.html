@@ -1,0 +1,40 @@
+                    <!DOCTYPE ><html>
+                <head> <title>Natural number
+                   </title></head>
+                   <body>
+                 <form> 
+            <label> NUMBER:</label>
+            <input type="text" id="1"placeholder="Enter the number"/><br>
+            <br><input type="button" value=" NATURAL NUMBERS "onclick="natural()"/><br>
+            <br><input type="button" value=" SUM "onclick="sum()"/><br>
+            <br><input type="button" value="AVERAGE"onclick="average()"/>
+                 </form>
+                  <script type="text/javascript">
+            
+            
+            function natural(){
+                var x=document.getElementById("1").value;
+            for(var i=1;i<=Number(x);i++){
+                alert(i);
+            }}
+            function sum(){
+                var a=0;
+                var x=document.getElementById("1").value;
+                for(var i=1;i<=Number(x);i++)  {
+                a=a+i;  }
+                alert("The sum of first "+Number(x)+" natural numbers is "+a);
+        
+            }
+            function average(){
+                var a=0;
+                var x=document.getElementById("1").value;
+                for(var i=1;i<=Number(x);i++){
+                a=a+i;}
+                const avg=a/Number(x);
+                alert("the average is "+avg);
+            }
+
+            
+                  </script>
+             </body>
+              </html>

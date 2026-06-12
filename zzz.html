@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE</title>
+</head>
+
+<body>
+    <form>
+        <label> DIGIT :</label>
+        <input type="text" placeholder="enter it here" id="1">
+    </form><br>
+    <br> <input type="submit" value="CHECK" onclick="check()">
+    </form>
+    <script type="text/javascript">
+        function check() {
+            var x = Number(document.getElementById(1).value);
+            if (x == "") {
+                alert("Enter a number first");
+
+                return false;
+
+            }
+            else {
+                if (x % 2 == 0) {
+                    alert("The number is even");
+                }
+
+                else {
+                    alert("The number is odd");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

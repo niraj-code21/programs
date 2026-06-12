@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <label>NAME:</label>
+        <input type="text" placeholder="Enter here" id="num1"><br>
+        <label>ROLL-NO:</label>
+        <input type="text" placeholder="Enter here"><br>
+        <label>Marks1:</label>
+        <input type="text" placeholder="marks of science" id="num2"><br>
+        <label> Marks2:</label>
+        <input type="text" placeholder="Marks of maths" id="num3"><br>
+        <label> Marks3:</label>
+        <input type="text" placeholder="marks of computer" id="num4"><br>
+        <br> <input type="button" value="PER(%)" onclick="percentage ()"><br>
+        <input type="button" value="DIVISION" onclick="division ()"><br>
+
+    </form>
+    <script type="text/javascript">
+        var a;
+
+        function percentage() {
+            var x = Number(document.getElementById("num2").value);
+            var y = Number(document.getElementById("num3").value);
+            var z = Number(document.getElementById("num4").value);
+            var marksobtain = x + y + z;
+            var totalmarks = 300;
+            var per = (marksobtain / totalmarks) * 100;
+            var name = document.getElementById("num1").value;
+            alert("Total percentage obtained by " + name + " is " + per + "%");
+            a = per;
+
+
+        }
+        function division() {
+            var name = document.getElementById("num1").value;
+            if (a > 80 && a <= 100) {
+                alert(name + " You have obtained FIRST DIVISION :)");
+            }
+            else if (a > 60 && a < 81) {
+                alert(name + " You have obtained SECOND DIVISION:)");
+            }
+            else {
+                alert(name + " You have obtained THIRD DIVISION OBTAINED :)");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

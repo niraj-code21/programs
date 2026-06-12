@@ -1,0 +1,28 @@
+<html>
+
+<head>
+	<title>Add two numbers using js</title>
+</head>
+
+<body>
+	<form>
+		<h1> ADD TWO NUMBERS:</h1>
+		<label> First Num:</label><br>
+		<input type="text" placeholder="Enter the Number" id="1" /><br>
+
+		<label>Second Num:</label><br>
+		<input type="text" placeholder="Enter the Number" id="2" /><br>
+
+		<br><input type="button" value="SUM" onclick="add()" />
+	</form>
+	<script type="text/javascript">
+		function add() {
+			var x = Number(document.getElementById("1").value);
+			var y = Number(document.getElementById("2").value);
+			var sum;
+			sum = Number(x) + Number(y);
+			alert("The sum is " + sum);
+		}</script>
+</body>
+
+</html>

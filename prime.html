@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>PRIME/COMPOSITE </title>
+</head>
+
+<body>
+    <form>
+
+        <input type="text" id=1 placeholder="ENTER the numbr" /><br>
+        <br><input type="button" value="CHECK" onclick="check()" />
+    </form>
+    <script type="text/javascript">
+        function check() {
+            const a = document.getElementById("1").value;
+            let count = 0;
+            for (let i = 0; i <= a; i++) {
+                if (a % i == 0) {
+                    count = count + 1;
+                }
+            }
+            if (count == 2) {
+
+                alert("the number " + a + " is prime");
+            }
+
+            else {
+
+                alert("The number " + a + " is composite");
+            }
+        }
+    </script>
+</body>
+
+</html>

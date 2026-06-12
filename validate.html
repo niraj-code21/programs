@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Form Validation</title>
+<script type = "text/javascript">
+function validate() {
+if( document.myForm.Name.value == "" ) {
+alert( "Please provide your name!" );
+document.myForm.Name.focus() ;
+return false;
+}
+var emailID = document.myForm.EMail.value;
+if( emailID == "" ) {
+alert( "Please provide your Email!" );
+document.myForm.EMail.focus() ;
+return false;
+}
+//it returns the index of the first occurrence of the specified substring"@"
+var atpos = emailID.indexOf("@");
+//it returns the index of the last occurrence of the specified substring"."
+var dotpos = emailID.lastIndexOf(".");
+if (atpos < 1 || ( dotpos - atpos < 2 )) {
+alert("Please enter correct email ID")
+document.myForm.EMail.focus() ;
+return false;
+}
+var firstpassword=document.myForm.password.value;
+var secondpassword=document.myForm.password2.value;
+if( firstpassword == ""|| firstpassword.length<6) {
+alert( "Please provide Password with at least 6 characters" );
+document.myForm.password.focus() ;
+return false;
+}
+if( secondpassword == "" ) {
+alert( "Please reenter the Password" );
+document.myForm.password2.focus() ;
+return false;
+}
+if(firstpassword!=secondpassword){
+alert("password must be same!");
+document.myForm.password2.focus() ;
+return false;
+}
+if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+document.myForm.Zip.value.length != 5 ) {
+alert( "Please provide a zip in the format #####." );
+document.myForm.Zip.focus() ;
+return false;
+}
+if( document.myForm.Country.value == "-1" ) {
+alert( "Please provide your country!" );
+return false;
+}
+return( true );
+}
+</script>
+</head>
+<body>
+<form action = "" name = "myForm" onsubmit = "return(validate());">
+<table border = "1">
+<tr>
+<td align = "right">Name</td>
+<td><input type = "text" name = "Name" placeholder="enter the name"/></td>
+</tr>
+<tr>
+<td align = "right">EMail</td>
+<td><input type = "text" name = "EMail" /></td>
+</tr>
+<tr>
+<td align="right">Password</td>
+<td><input type="password" name="password" placeholder="enter strong password" /></td>
+</tr>
+<tr>
+<td align="right">Re-enter Password</td>
+<td><input type="password" name="password2"placeholder="Re-enter the password"/></td>
+</tr>
+<tr>
+<td align = "right">Zip Code</td>
+<td><input type = "text" name = "Zip" /></td>
+</tr>
+<tr>
+<td align = "right">Country</td>
+<td>
+<select name = "Country">
+<option value = "-1" selected>[choose yours]</option>
+<option value = "1">USA</option>
+<option value = "2">UK</option>
+<option value = "3">INDIA</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align = "right"></td>
+<td><input type = "submit" value = "Submit" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
