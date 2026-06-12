@@ -13,8 +13,9 @@
         <br><input type="button" value="FACTORIAL" onclick="fact()">
     </form>
     <script type="text/javascript">
+
         function multi() {
-            var x = Number(document.getElementById("num1")).value;
+            var x = Number(document.getElementById("num1").value);
             alert("The Multiplication table of " + x + " is :");
 
             for (let i = 1; i <= 10; i++) {
@@ -24,12 +25,12 @@
             }
         }
         function fact() {
-            var x = Number(document.getElementById("num1")).value;
-            let fact = 1;
+            var x = Number(document.getElementById("num1").value);
+            var facti = 1;
             for (let i = 1; i <= x; i++) {
-                fact = facti * i;
+                facti = facti * i;
             }
-            alert("The factorial of " + x + " is " + fact);
+            alert("The factorial of " + x + " is " + facti);
 
         }
     </script>

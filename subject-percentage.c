@@ -10,7 +10,7 @@ struct student
     char name[20];
     int roll;
     struct mark sub;
-} stu[2];
+} stu[5];
 int main()
 {
     int i;

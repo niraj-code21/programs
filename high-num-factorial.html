@@ -1,36 +1,39 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html>
-    <head>
-        <title>
-            HIGHEST
-        </title>
-    </head>
-    <body>
-        <script type="text/javascript">
-            var a= Number (prompt("Enter the first number"));
-            var b= Number (prompt("Enter the second number"));
-var c= Number (prompt("Enter the first number"));2222
-var g;
-if(a>b && a>c){
-    document.write("The Highest number is "+a+"<br>");
-    g=a;
 
-}
-if(b>a && b>c){
-    document.write("The highest number is "+b+"<br>");
-    g=b;
-}
-if(c>b && c>a){
-    document.write("the highest number is "+c+" <br>");
-    g=c;
+<head>
+    <title>
+        HIGHEST
+    </title>
+</head>
 
-}
-var fact=1;
-for(let i=1;i<=g;i++){
-fact=fact*i;
-}
-document.write("<br>The factorial of "+g+ " is "+fact);
+<body>
+    <script type="text/javascript">
+        var a = Number(prompt("Enter the first number"));
+        var b = Number(prompt("Enter the second number"));
+        var c = Number(prompt("Enter the third number"));
+        var g;
+        if (a > b && a > c) {
+            document.write("The Highest number is " + a + "<br>");
+            g = a;
 
-        </script>
-    </body>
+        }
+        if (b > a && b > c) {
+            document.write("The highest number is " + b + "<br>");
+            g = b;
+        }
+        if (c > b && c > a) {
+            document.write("the highest number is " + c + " <br>");
+            g = c;
+
+        }
+        var fact = 1;
+        for (let i = 1; i <= g; i++) {
+            fact = fact * i;
+        }
+        document.write("<br>The factorial of " + g + " is " + fact);
+
+    </script>
+</body>
+
 </html>
