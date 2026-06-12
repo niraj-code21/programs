@@ -8,13 +8,13 @@
 <body>
     <form>
         <label> NUMBER:</label>
-        <input type="text" placeholder="Enter Here" id="1"><br>
+        <input type="text" placeholder="Enter Here" id="num1"><br>
         <br> <input type="button" value="MULTIPLICATION" onclick="multi()"><br>
         <br><input type="button" value="FACTORIAL" onclick="fact()">
     </form>
     <script type="text/javascript">
         function multi() {
-            var x = Number(document.getElementById("1")).value;
+            var x = Number(document.getElementById("num1")).value;
             alert("The Multiplication table of " + x + " is :");
 
             for (let i = 1; i <= 10; i++) {
@@ -24,7 +24,7 @@
             }
         }
         function fact() {
-            var x = Number(document.getElementById("1")).value;
+            var x = Number(document.getElementById("num1")).value;
             let fact = 1;
             for (let i = 1; i <= x; i++) {
                 fact = facti * i;
