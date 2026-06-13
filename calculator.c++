@@ -4,8 +4,8 @@ using namespace std;
 class calculator
 {
 private:
-    int A, s, m;
-    float a, b, d;
+    int A, s, m, a, b;
+    float d;
 
 public:
     void data()
@@ -40,7 +40,7 @@ public:
         {
             A = a * b;
             cout << a << " * " << b << " = " << A;
-            cout << " (enter non zero number for NON ZERO value)\n";
+            cout << " (enter non zero number for NON-ZERO value)\n";
         }
     }
 
