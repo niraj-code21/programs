@@ -40,7 +40,7 @@ public:
         {
             A = a * b;
             cout << a << " * " << b << " = " << A;
-            cout << " (enter non zero number for NON-ZERO value)\n";
+            cout << "  (enter non zero number for NON-ZERO value)\n";
         }
         else
         {
