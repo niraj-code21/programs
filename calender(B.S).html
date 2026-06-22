@@ -17,7 +17,7 @@
 
         <input type="button" value="CALENDER" onclick="calender()">
         <h1> CALENDER FOR 2083 (BS) </h1><br>
-        <b id="num1"></b>
+        <h3 id="num1"> </h3>
 
         <h2 id="calendarDisplay"></h2>
 
@@ -26,14 +26,16 @@
     <script type="text/javascript">
 
         function calender() {
-            // Grab the value from the input if you need it
-            let month = Number(document.getElementById("monthInput").value);
 
-            // Build your calendar string
+            var month = Number(document.getElementById("monthInput").value);
+
+
+
+
             if (month == 1) {
 
                 let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
-                    "1   2   3   4   5\n" +
+                    "        1   2   3   4   5\n" +
                     "6   7   8   9   10  11  12\n" +
                     "13  14  15  16  17  18  19\n" +
                     "20  21  22  23  24  25  26\n" +
@@ -194,11 +196,14 @@
                 document.getElementById("num1").innerHTML = "CHAITRA :";
                 document.getElementById("calendarDisplay").innerHTML = calendarContent;
             }
-
             else {
-                alert("Enter a valid month ");
+                alert("Enter a valid month :");
             }
+
         }
+
+
+
 
     </script>
 
