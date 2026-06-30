@@ -10,7 +10,7 @@ private:
 public:
     void data()
     {
-        cout << " Enter any two numbers For Calculation\n";
+        cout << " Enter any two numbers For Calculation:\n";
         cin >> a >> b;
     }
     void sum()
@@ -25,7 +25,7 @@ public:
         if (s)
         {
             m = a - b;
-            cout << a << " - " << b << " = " << m << "  make (a) greater than (b) for positive integer\n";
+            cout << a << " - " << b << " = " << m << "  Make (a) greater than (b) for positive integer\n";
         }
         else
         {
@@ -40,7 +40,7 @@ public:
         {
             A = a * b;
             cout << a << " * " << b << " = " << A;
-            cout << "  (enter non zero number for NON-ZERO value)\n";
+            cout << "  (Enter non zero number for NON-ZERO value)\n";
         }
         else
         {
