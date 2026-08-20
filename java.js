@@ -1,0 +1,176 @@
+function calender() {
+
+    var month = Number(document.getElementById("monthInput").value);
+
+
+
+
+    if (month == 1) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "        1   2   3   4   5\n" +
+            "6   7   8   9   10  11  12\n" +
+            "13  14  15  16  17  18  19\n" +
+            "20  21  22  23  24  25  26\n" +
+            "27  28  29  30  31" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "BAISHAK :";
+
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+    else if (month == 2) {
+
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "                     1   2  \n" +
+            " 3   4   5   6   7   8   9\n" +
+            " 10  11  12  13  14  15  16\n" +
+            " 17  18  19  20  21  22  23\n" +
+            " 24  25  26  27  28  29  30\n" +
+            " 31" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "JESTHA :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+
+    else if (month == 3) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "     1   2   3   4   5  6\n" +
+            " 7   8   9   10  11  12  13\n" +
+            " 14  15  16  17  18  19  20\n" +
+            " 21  22  23  24  25  26  27\n" +
+            " 28  29  30  31  32" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "ASADH :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+
+    else if (month == 4) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "                     1   2\n" +
+            " 3   4   5   6   7   8   9\n" +
+            " 10  11  12  13  14  15  16\n" +
+            " 17  18  19  20  21  22  23\n" +
+            " 24  25  26  27  28  29  30\n" +
+            " 31\n" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "SHRAWAN :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+
+    else if (month == 5) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "     1   2   3   4   5   6\n" +
+            " 7   8   9   10  11  12  13\n" +
+            " 14  15  16  17  18  19  20\n" +
+            " 21  22  23  24  25  26  27\n" +
+            " 28  29  30  31" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "BHADRA :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+    else if (month == 6) {
+
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "                 1   2   3\n" +
+            " 4   5   6   7   8   9   10\n" +
+            " 11  12  13  14  15  16  17\n" +
+            " 18  19  20  21  22  23  24\n" +
+            " 25  26  27  28  29  30  31" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "ASHWIN :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+
+
+    else if (month == 7) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            " 1   2   3   4   5   6   7\n" +
+            " 8   9   10  11  12  13  14\n" +
+            " 15  16  17  18  19  20  21\n" +
+            " 22  23  24  25  26  27  28\n" +
+            " 29  30 " + "</pre>";
+
+        document.getElementById("num1").innerHTML = "KARTHIK :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+    else if (month == 8) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "         1   2   3   4   5\n" +
+            " 6   7   8   9   10  11  12\n" +
+            " 13  14  15  16  17  18  19\n" +
+            " 20  21  22  23  24  25  26\n" +
+            " 27  28  29" + "</pre>";
+        document.getElementById("num1").innerHTML = "MANGSIR :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+
+    else if (month == 9) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "             1   2   3   4\n" +
+            "  5  6   7   8   9   10  11  \n" +
+            " 12  13  14  15  16  17  18\n" +
+            " 19  20  21  22  23  24  25\n" +
+            " 26  27  28  29  30  " + "</pre>";
+        document.getElementById("num1").innerHTML = "POUSH :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+    else if (month == 10) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "                     1   2\n" +
+            " 3   4   5   6   7   8   9\n" +
+            " 10  11  12  13  14  15  16\n" +
+            " 17  18  19  20  21  22  23\n" +
+            " 24  25  26  27  28  29 \n" + "</pre>";
+
+        document.getElementById("num1").innerHTML = "MAGH :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+    else if (month == 11) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "                        1\n" +
+            " 2  3   4   5   6   7   8\n" +
+            " 9  10  11  12  13  14  15\n" +
+            " 16 17  18  19  20  21  22\n" +
+            " 23 24  25  26  27  28  29\n" +
+            " 30" + "</pre>";
+        document.getElementById("num1").innerHTML = "FALGUN :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+
+    else if (month == 12) {
+
+        let calendarContent = "<pre>" + "SUN MON TUE WED THU FRI SAT <br>" +
+            "     1   2   3   4   5   6\n" +
+            " 7   8   9   10  11  12  13\n" +
+            " 14  15  16  17  18  19  20\n" +
+            " 21  22  23  24  25  26  27\n" +
+            " 28  29  30 " + "</pre>";
+
+        document.getElementById("num1").innerHTML = "CHAITRA :";
+        document.getElementById("calendarDisplay").innerHTML = calendarContent;
+    }
+    else {
+        alert("Enter a valid month :");
+    }
+
+}
